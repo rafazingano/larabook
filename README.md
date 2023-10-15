@@ -43,10 +43,11 @@ composer install
 
 6.  Copie o arquivo de configuração `.env.example` e renomeie-o para `.env`. Configure as variáveis de ambiente, como as credenciais do banco de dados, no arquivo `.env`. 
     
-7.  Gere a chave de aplicação:
+7.  Gere a chave de aplicação e tambem crie os links simbólicos:
     
 ```bash
 php artisan key:generate
+php artisan storage:link
 ```
     
 8.  Execute as migrações do banco de dados para criar as tabelas e execute as seeders:
